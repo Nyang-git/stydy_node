@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(location.search);       //获取完整的内容 ?umane = ...
+        //截取字符串
+        console.log(location.search.substr(1));  ////获取 umane = ...
+        //利用=把字符分割为数组
+        var arr = location.search.substr(1).split('=');
+        console.log(arr[1]);
+    </script>
+</body>
+</html>
